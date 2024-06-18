@@ -1,3 +1,4 @@
+import { MovieItems } from "../interfaces/MovieItem.interface"
 
 export const getMovies = async () => {
     const options = {
@@ -14,11 +15,14 @@ export const getMovies = async () => {
 
     
 
-    const movies = results.map((movie: any) => ({
+    const movies = results.map((movie:MovieItems) => ({
         img: movie.poster_path,
         title: movie.title,
         date: movie.release_date,
+        rating: movie.vote_average,
+        id: movie.id
     }))
+    
 
     return movies
     

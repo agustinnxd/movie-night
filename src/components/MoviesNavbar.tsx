@@ -1,14 +1,8 @@
-import { useState } from "react"
-import './MoviesNavbar.css'
+import '../Styles/MoviesNavbar.css'
+import {MoviesNavbar} from '../interfaces/MoviesNavbar.interface'
 
-export const SearchMovies = () => {
+export const SearchMovies = ( {inputValue, handleSearchMovies}:MoviesNavbar ) => {
     
-    const [inputValue, setInputValue] = useState('')
-
-    const handleSearchMovies = (event:React.ChangeEvent<HTMLInputElement>) => {
-        setInputValue(event.target.value)
-    }
-
   return (
     <>
         <nav>

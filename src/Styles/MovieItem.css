@@ -1,0 +1,33 @@
+.card{
+    background: #393A40;
+    width: 18rem;
+    border: 2px solid #B2B3BD;
+    margin-bottom: 24px;
+    position: relative;
+
+}
+
+.card-body{
+    color: white;
+}
+
+.card-title{
+    margin-bottom: 34px;
+}
+
+.card-text{
+    position: absolute;
+    bottom: 0px;
+    left: 16px;
+}
+
+.movie-rate-container{
+    border: 3px solid goldenrod;
+    border-radius: 6px;
+    height: 31px;
+    width: 31px;
+    text-align: center;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+}
