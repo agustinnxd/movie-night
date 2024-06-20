@@ -1,6 +1,11 @@
 import { MovieItems } from "../interfaces/MovieItem.interface"
 
+function sleep(ms:number) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 export const getMovies = async () => {
+
     const options = {
         method: 'GET',
         headers: {
@@ -23,7 +28,9 @@ export const getMovies = async () => {
         id: movie.id
     }))
     
+    await sleep(4000);
 
     return movies
+    
     
 };

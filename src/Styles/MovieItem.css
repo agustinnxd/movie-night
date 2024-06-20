@@ -4,11 +4,11 @@
     border: 2px solid #B2B3BD;
     margin-bottom: 24px;
     position: relative;
-
 }
 
 .card-body{
     color: white;
+
 }
 
 .card-title{
@@ -21,13 +21,22 @@
     left: 16px;
 }
 
-.movie-rate-container{
-    border: 3px solid goldenrod;
-    border-radius: 6px;
-    height: 31px;
-    width: 31px;
-    text-align: center;
+.btn{
+    display: grid;
     position: absolute;
+    bottom: 12px;
     right: 16px;
-    bottom: 16px;
+    text-align: center;
+    place-content: center;
+    height: 48px;
+    font-size: 24px;
+    font-weight: bold;
 }
+
+.movie-rate{
+    position: absolute;
+    top: -32px;
+    left: 0px;
+    
+}
+

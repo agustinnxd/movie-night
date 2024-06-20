@@ -1,3 +1,7 @@
+.skeleton-card{
+    margin-bottom: 24px;
+}
+
 .cards-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
